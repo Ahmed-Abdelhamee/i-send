@@ -18,6 +18,7 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 import { AdminModule } from './admin/admin.module';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { AdminLoginComponent } from './components/admin-login/admin-login.compon
   providers: [
      // write this special code for upload img 
      { provide: FIREBASE_OPTIONS, useValue: environment.firebase },
+     {provide : LocationStrategy , useClass : HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

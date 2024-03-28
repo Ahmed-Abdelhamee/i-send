@@ -154,6 +154,7 @@ a {
 /*header*/
 .header {
     position: fixed;
+    position: relative;
     z-index: 11111;
     left: 0;
     width: 100%;
@@ -366,6 +367,7 @@ a {
 .main-text {
     position: absolute;
     top: 160px;
+    top: 100px;
     left: 0;
     right: 0;
     color: white;
