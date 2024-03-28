@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { homeClients } from 'src/app/admin/interfaces/home-clients.interface';
+import { BgSourcesService } from 'src/app/services/bg-sources.service';
 import { DataServiceService } from 'src/app/services/data-service.service';
 
 @Component({
@@ -13,7 +14,11 @@ export class HomeComponent {
 
   clientsListGroup: any[] = []
 
-  constructor(private dataServ: DataServiceService) {
+  homeBackgound=""
+  service_numbersBackgound=""
+  advantagesCallBackgound=""
+
+  constructor(private dataServ: DataServiceService, private bgServ: BgSourcesService) {
     dataServ.getdata("allClients").subscribe({
       next: data => {
         for (const key in data) {
@@ -23,6 +28,9 @@ export class HomeComponent {
       error: () => { console.error("check your network") },
     })
 
+    this.homeBackgound=bgServ.bgHome;
+    this.service_numbersBackgound=bgServ.service_numbers;
+    this.advantagesCallBackgound=bgServ.bgAdvantagesCall
   }
 
   // advertingNumber:number=4100;

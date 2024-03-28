@@ -356,7 +356,7 @@ a {
 /*home*/
 /*####################*/
 .home {
-    background-image: url(/assets/home-bg.jpg);
+    /* background-image: url(/assets/home-bg.jpg); */
     background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
@@ -462,7 +462,7 @@ a {
 
 /* service_numbers */
 .service_numbers {
-    background-image: url(/assets/c2-1-1.jpg);
+    /* background-image: url(/assets/c2-1-1.jpg); */
     background-position: center;
     background-size: cover;
     height: 45vh;
@@ -599,7 +599,7 @@ a {
 /* call */
 /*#####################*/
 .advantages .call {
-    background-image: url(/assets/slider-socmed-03.jpg);
+    /* background-image: url(/assets/slider-socmed-03.jpg); */
     background-position: center;
     background-size: cover;
     height: 50vh;
