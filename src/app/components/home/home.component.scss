@@ -1,0 +1,32 @@
+// .home{
+//     position: relative;
+//     height: 60vh;
+//     display: flex;
+//     align-items: center;
+//     flex-flow: column;
+//     padding-top: 15vh;
+// }
+
+.clients {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.clients::-webkit-scrollbar {
+    position: absolute;
+    left: 0;
+}
+
+.clients img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .clients img {
+        width: 180px;
+        height: 180px;
+    }
+}

@@ -1,0 +1,17 @@
+.item{
+    background-color: rgb(4 158 186);;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: gold;
+    border-radius: 25px;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    background-color: aqua !important;
+    position: relative;
+    left: -150px;
+}
