@@ -17,6 +17,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 import { AdminModule } from './admin/admin.module';
+import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AdminModule } from './admin/admin.module';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    AdminLoginComponent,
   ],
   imports: [
     BrowserModule,
